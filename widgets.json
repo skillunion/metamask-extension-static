@@ -4,19 +4,25 @@
       "domain": "ethresear.ch",
       "querySelector": ".topic-owner .post-controls .actions",
       "uniqueClass": ".nonorg-widget",
-      "buttonHtmlString": "<button class=\"widget-button btn-flat share no-text btn-icon nonorg-widget\" style=\"background-color: #08c;color: #fff;\">Add to NonOrg</button>"
+      "buttonHtmlString": "<button class=\"widget-button btn-flat share no-text btn-icon nonorg-widget\" style=\"background-color: #08c;color: #fff;\">Add to NonOrg</button>",
+      "popupHtml": "<p>Lorem ipsum</p><p>dolor sit amet</p>",
+      "popupStyle": "p { color: #f00; }"
     },
     {
       "domain": "ethresear.ch",
       "querySelector": ".topic-owner .post-controls .actions",
       "uniqueClass": ".nonorg-widget2",
-      "buttonHtmlString": "<button class=\"widget-button btn-flat share no-text btn-icon nonorg-widget2\" style=\"background-color: #ED207B;color: #fff;\">Add to NonOrg 2</button>"
+      "buttonHtmlString": "<button class=\"widget-button btn-flat share no-text btn-icon nonorg-widget2\" style=\"background-color: #ED207B;color: #fff;\">Add to NonOrg 2</button>",
+      "popupHtml": "<p>Lorem ipsum</p><p>dolor sit amet</p>",
+      "popupStyle": "p { color: #f00; }"
     },
     {
       "domain": "ethresear.ch",
       "querySelector": ".topic-owner .post-controls .actions",
       "uniqueClass": ".nonorg-widget3",
-      "buttonHtmlString": "<button class=\"widget-button btn-flat share no-text btn-icon nonorg-widget3\" style=\"background-color: #ED207B;color: #fff;\">Add to NonOrg 3</button>"
+      "buttonHtmlString": "<button class=\"widget-button btn-flat share no-text btn-icon nonorg-widget3\" style=\"background-color: #ED207B;color: #fff;\">Add to NonOrg 3</button>",
+      "popupHtml": "<p>Lorem ipsum</p><p>dolor sit amet</p>",
+      "popupStyle": "p { color: #f00; }"
     } 
   ]
 }
