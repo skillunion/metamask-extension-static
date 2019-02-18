@@ -1,16 +1,16 @@
 {
   "widgets": [
     {
-      "domain": 'ethresear.ch',
-      "querySelector": '.topic-owner .post-controls .actions',
-      "uniqueClass": '.nonorg-widget',
-      "buttonHtmlString": '<button class="widget-button btn-flat share no-text btn-icon nonorg-widget" style="background-color: #08c;color: #fff;">Add to NonOrg</button>'
+      "domain": "ethresear.ch",
+      "querySelector": ".topic-owner .post-controls .actions",
+      "uniqueClass": ".nonorg-widget",
+      "buttonHtmlString": "<button class=\"widget-button btn-flat share no-text btn-icon nonorg-widget\" style=\"background-color: #08c;color: #fff;\">Add to NonOrg</button>"
     },
     {
-      "domain": 'ethresear.ch',
-      "querySelector": '.topic-owner .post-controls .actions',
-      "uniqueClass": '.nonorg-widget2',
-      "buttonHtmlString": '<button class="widget-button btn-flat share no-text btn-icon nonorg-widget2" style="background-color: #ED207B;color: #fff;">Add to NonOrg 2</button>'
+      "domain": "ethresear.ch",
+      "querySelector": ".topic-owner .post-controls .actions",
+      "uniqueClass": ".nonorg-widget2",
+      "buttonHtmlString": "<button class=\"widget-button btn-flat share no-text btn-icon nonorg-widget2\" style=\"background-color: #ED207B;color: #fff;\">Add to NonOrg 2</button>"
     } 
   ]
 }
