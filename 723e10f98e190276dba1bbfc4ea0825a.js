@@ -1,5 +1,2 @@
-export default {
-  insertWidgets () => {
-    console.log('Hi from the default export!');
-  }
-}
+function hi(){ console.log('Hi') }
+export default hi;
