@@ -46,9 +46,6 @@
     },
 
     init: function (doc, pushTransactionCallback) {
-        console.log('insertWidgets arguments', arguments);
-        console.log('insertWidgets this', this);
-
         var me = this;
         me._pushTransactionCallback = pushTransactionCallback;
         var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
