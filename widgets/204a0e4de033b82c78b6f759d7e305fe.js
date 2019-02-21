@@ -43,22 +43,27 @@
         return div.firstChild;
     },
 
-    _onWidgetButtonClick: function (event) {
+    _onWidgetButtonClick: async function (event) {
         var tweetNode = event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
         var tweetId = tweetNode.getAttribute('data-tweet-id');
         var tweetText = tweetNode.querySelector('div.js-tweet-text-container').innerText;
+
+        const twitterResponse = await fetch(`https://publish.twitter.com/oembed?url=https://twitter.com/0/status/${tweetId}`)
+        const twitterParsed = await twitterResponse.json()
+
 
         this._pushTransactionCallback({
             data: "0x000000000000000000000000000000000000000000000000000000000000000000000000",
             to: "0x0000000000000000000000000000000000000000"
         }, {
-            html: '<div>WIDGET TRANSACTION</div><div>TWEET ID: ' + tweetId + '</div><div>TWEET TEXT: ' + tweetText + '</div>',
+            html: twitterParsed.html,
             style: ''
         });
     },
 
     init: function (doc, pushTransactionCallback) {
         var me = this;
+
         me._pushTransactionCallback = pushTransactionCallback;
         var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
         me.observer = new MutationObserver(function (mutationsList) {
