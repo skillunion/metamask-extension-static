@@ -50,14 +50,15 @@
 
         const twitterResponse = await fetch(`https://publish.twitter.com/oembed?url=https://twitter.com/0/status/${tweetId}`)
         const twitterParsed = await twitterResponse.json()
-
+        
+        console.log('!!!!! twitterParsed', twitterParsed);
 
         this._pushTransactionCallback({
             data: "0x000000000000000000000000000000000000000000000000000000000000000000000000",
             to: "0x0000000000000000000000000000000000000000"
         }, {
-            html: twitterParsed.html,
-            style: ''
+            data: twitterParsed,
+            jsx: twitterParsed.html
         });
     },
 
