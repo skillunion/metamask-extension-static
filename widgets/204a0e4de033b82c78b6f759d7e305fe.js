@@ -63,7 +63,10 @@
                 <label>
                     Store into IPFS
                     <input name="customParam" type="checkbox" onChange={handleChange} />
-                </label>`
+                </label>`,
+            params: {
+                custom: true
+            }
         });
     },
 
