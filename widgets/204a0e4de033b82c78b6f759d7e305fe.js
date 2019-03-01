@@ -58,12 +58,14 @@
             to: "0x0000000000000000000000000000000000000000"
         }, {
             data: twitterParsed,
-            jsx: `<div dangerouslySetInnerHTML={{ __html: data.html }} />
-                <div>author_name: {data.author_name}</div>
-                <label>
-                    Store into IPFS
+            jsx: `<div style={{ padding: '8px 16px' }}>
+                  <style dangerouslySetInnerHTML={{ __html: style }} />
+                  <div dangerouslySetInnerHTML={{ __html: data.html }} />
+                  <label>
                     <input name="ipfs" checked={params.ipfs} type="checkbox" onChange={handleChange} />
-                </label>`,
+                    <span>Store into IPFS</span>
+                  </label>
+                </div>`,
             params: {
                 ipfs: false
             }
