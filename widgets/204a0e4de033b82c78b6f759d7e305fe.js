@@ -62,10 +62,10 @@
                 <div>author_name: {data.author_name}</div>
                 <label>
                     Store into IPFS
-                    <input name="custom" checked={params.custom} type="checkbox" onChange={handleChange} />
+                    <input name="ipfs" checked={params.ipfs} type="checkbox" onChange={handleChange} />
                 </label>`,
             params: {
-                custom: true
+                ipfs: true
             }
         });
     },
