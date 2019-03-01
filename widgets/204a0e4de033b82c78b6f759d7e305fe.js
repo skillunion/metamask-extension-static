@@ -58,7 +58,7 @@
             to: "0x0000000000000000000000000000000000000000"
         }, {
             data: twitterParsed,
-            jsx: twitterParsed.html
+            jsx: `<div>twitter</div>`
         });
     },
 
