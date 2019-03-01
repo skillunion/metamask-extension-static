@@ -65,7 +65,7 @@
                     <input name="ipfs" checked={params.ipfs} type="checkbox" onChange={handleChange} />
                 </label>`,
             params: {
-                ipfs: true
+                ipfs: false
             }
         });
     },
