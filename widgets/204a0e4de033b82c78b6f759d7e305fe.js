@@ -58,7 +58,7 @@
             to: "0x0000000000000000000000000000000000000000"
         }, {
             data: twitterParsed,
-            jsx: `<div>twitter</div>`
+            jsx: `<div dangerouslySetInnerHTML={{ __html: data.html }} /><div>author_name: {data.author_name}</div>`
         });
     },
 
